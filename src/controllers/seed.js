@@ -18,11 +18,11 @@ module.exports.seed = async (req, res) => {
     const orgs = [
       {
         _id: org1,
-        name: 'Xendit'
+        name: 'xendit'
       },
       {
         _id: org2,
-        name: 'Axa'
+        name: 'axa'
       }
     ];
 

@@ -10,6 +10,7 @@ const connectDb = () => {
     useUnifiedTopology: true
   };
 
+  console.log(mongoUri);
   return mongoose.connect(mongoUri, mongoOptions);
 };
 

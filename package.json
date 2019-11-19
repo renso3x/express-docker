@@ -8,9 +8,6 @@
     "dev": "nodemon index.js",
     "test": "./node_modules/mocha/bin/_mocha"
   },
-  "engines": {
-    "yarn": "1.x"
-  },
   "author": "Romeo Enso",
   "license": "MIT",
   "dependencies": {

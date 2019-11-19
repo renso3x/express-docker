@@ -7,7 +7,7 @@ const should = chai.should();
 
 const organization = require('./fixtures/organization.json');
 
-const base = 'http://localhost:3000';
+const base = 'http://localhost:3001';
 
 describe('Unit Test API', () => {
   beforeEach(() => {
@@ -29,7 +29,7 @@ describe('Unit Test API', () => {
         organization.members.success.res,
         JSON.stringify(organization.members.success.body)
       );
-      request.get(`${base}/orgs/Axa/members`, (err, res, body) => {
+      request.get(`${base}/orgs/axa/members`, (err, res, body) => {
         // there should be a 200 status code
         res.statusCode.should.eql(200);
         // the response should be JSON
@@ -95,7 +95,7 @@ describe('Unit Test API', () => {
           memberId: '5dd35ff8a7e25636e3a9a508'
         },
         json: true,
-        url: `${base}/orgs/Axa/comments`
+        url: `${base}/orgs/axa/comments`
       };
       const obj = organization.postComment.success;
 
