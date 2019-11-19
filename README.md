@@ -13,7 +13,7 @@
 docker-compose up
 
 # Run the unit test
-npm test
+npm run test
 ```
 
 ## Generate Seed
