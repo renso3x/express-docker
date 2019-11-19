@@ -9,15 +9,11 @@
 ## Guide
 
 ```bash
-# Install dependencies (server & client)
-yarn install
-
-# Run server & client (:3000 & :4000)
-yarn dev
+# Build docker image
+docker-compose up
 
 # Run the unit test
-
-yarn test
+npm test
 ```
 
 ## Generate Seed
