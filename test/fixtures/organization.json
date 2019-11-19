@@ -1,0 +1,138 @@
+{
+  "members": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "status": "success",
+        "data": [
+          {
+            "_id": "5dd35ff8a7e25636e3a9a50a",
+            "firstName": "Wiley",
+            "lastName": "Zieme",
+            "email": "Rhianna_Mohr90@hotmail.com",
+            "password": "$2b$10$PGQUShFwT8SOEiZyBqiJmO3ZluBPToKHaCYro6jFqj8oOCPDwWpge",
+            "followers": 65943,
+            "following": 75678,
+            "avatarUrl": "http://lorempixel.com/640/480",
+            "organization": "5dd35ff8a7e25636e3a9a504",
+            "__v": 0
+          },
+          {
+            "_id": "5dd35ff8a7e25636e3a9a50b",
+            "firstName": "Kristy",
+            "lastName": "Ortiz",
+            "email": "Dominique_Herzog62@gmail.com",
+            "password": "$2b$10$PGQUShFwT8SOEiZyBqiJmO3ZluBPToKHaCYro6jFqj8oOCPDwWpge",
+            "followers": 16957,
+            "following": 78839,
+            "avatarUrl": "http://lorempixel.com/640/480",
+            "organization": "5dd35ff8a7e25636e3a9a504",
+            "__v": 0
+          }
+        ]
+      }
+    }
+  },
+  "getComments": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "comments": [
+          {
+            "_id": "5dd373acf9d2544d0816c1e5",
+            "comment": "Comment",
+            "member": "5dd35ff8a7e25636e3a9a508",
+            "organization": {
+              "_id": "5dd35ff8a7e25636e3a9a503",
+              "name": "Xendit",
+              "__v": 0
+            },
+            "__v": 0
+          },
+          {
+            "_id": "5dd373c1f9d2544d0816c1e6",
+            "comment": "This is my comment for xendit",
+            "member": "5dd35ff8a7e25636e3a9a508",
+            "organization": {
+              "_id": "5dd35ff8a7e25636e3a9a503",
+              "name": "Xendit",
+              "__v": 0
+            },
+            "__v": 0
+          },
+          {
+            "_id": "5dd374332f3e314d7582d2b3",
+            "comment": "This is my comment for xendit",
+            "member": "5dd35ff8a7e25636e3a9a508",
+            "organization": {
+              "_id": "5dd35ff8a7e25636e3a9a503",
+              "name": "Xendit",
+              "__v": 0
+            },
+            "__v": 0
+          }
+        ]
+      }
+    }
+  },
+  "postComment": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "message": "Successfully posted.",
+        "comment": {
+          "comment": "This is a comment.",
+          "member": "5dd35ff8a7e25636e3a9a50b",
+          "organization": "5dd35ff8a7e25636e3a9a504"
+        }
+      }
+    },
+    "forbidden": {
+      "res": {
+        "statusCode": 402,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "message": "Forbidden, not a member of this organization"
+      }
+    }
+  },
+  "delete": {
+    "success": {
+      "res": {
+        "statusCode": 200,
+        "headers": {
+          "content-type": "application/json"
+        }
+      },
+      "body": {
+        "comment": {
+          "deleted": true,
+          "_id": "5dd373acf9d2544d0816c1e5",
+          "comment": "Comment",
+          "member": "5dd35ff8a7e25636e3a9a508",
+          "organization": "5dd35ff8a7e25636e3a9a503",
+          "__v": 0,
+          "deletedAt": "2019-11-19T05:58:20.623Z"
+        }
+      }
+    }
+  }
+}
