@@ -25,22 +25,22 @@ npm run test
 ## Sample Request
 
 ```
-POST: http://localhost:3001/orgs/:orgName/comments - :orgName = xendit
+POST: http://localhost:3001/orgs/:orgName/comments - :orgName = xendit, axa
 {
   "comment": "This is my first comment for xendit",
   "memberId": "5dd39ded9422670013609a03"
 }
 ```
 ```
-GET: `localhost:3001/orgs/:orgName/comments`  - :orgName = xendit
+GET: `localhost:3001/orgs/:orgName/comments`  - :orgName = xendit, axa
 ```
 
 ```
-GET: `http://localhost:3001/orgs/:orgName/members` - :orgName = xendit
+GET: `http://localhost:3001/orgs/:orgName/members` - :orgName = xendit, axa
 ```
 
 ```
-DELETE: `localhost:3001/orgs/:orgName/comments/:id` - :orgName = xendit, :id = commentId
+DELETE: `localhost:3001/orgs/:orgName/comments/:id` - :orgName = xendit || axa, :id = commentId
 ```
 
 
