@@ -32,7 +32,7 @@ POST: http://localhost:3001/orgs/:orgName/comments - :orgName = xendit, axa
 }
 ```
 ```
-GET: `localhost:3001/orgs/:orgName/comments`  - :orgName = xendit, axa
+GET: `http://localhost:3001/orgs/:orgName/comments`  - :orgName = xendit, axa
 ```
 
 ```
@@ -40,7 +40,7 @@ GET: `http://localhost:3001/orgs/:orgName/members` - :orgName = xendit, axa
 ```
 
 ```
-DELETE: `localhost:3001/orgs/:orgName/comments/:id` - :orgName = xendit || axa, :id = commentId
+DELETE: `http://localhost:3001/orgs/:orgName/comments/:id` - :orgName = xendit || axa, :id = commentId
 ```
 
 
